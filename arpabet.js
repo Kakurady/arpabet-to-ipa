@@ -184,6 +184,6 @@ let srcPhon = ko.observable();
 let dest = ko.computed(function _dest(){ return ArpabetToIpa(srcPhon()); } );
 
 let viewmodel = {
-  srcPhon, dest
+  srcPhon, dest, srcPhonType:"", destType: "International Phonetic Alphabet"
 };
 ko.applyBindings(viewmodel);

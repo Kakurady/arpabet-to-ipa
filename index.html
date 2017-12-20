@@ -5,13 +5,13 @@
     <title></title>
   </head>
   <body>
-    <label>From:     <select class="" name="srcPhonType">
+    <label>From:     <select disabled name="srcPhonType">
           <option value="ARPA">ARPAbet</option>
           <option value="IPA">International Phonetic Alphabet</option>
         </select></label>
 
     <!--<button type="button" name="button"></button>-->
-    <label>To: <output name="destType"></output></label>
+    <label>To: <output name="destType" data-bind="text:destType"></output></label>
     <hr>
     <textarea name="srcPhon" rows="8" cols="80" data-bind="textInput: srcPhon"></textarea>
     <hr>
