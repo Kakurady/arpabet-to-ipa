@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <label>From:     <select class="" name="srcPhonType">
+          <option value="ARPA">ARPAbet</option>
+          <option value="IPA">International Phonetic Alphabet</option>
+        </select></label>
+
+    <!--<button type="button" name="button"></button>-->
+    <label>To: <output name="destType"></output></label>
+    <hr>
+    <textarea name="srcPhon" rows="8" cols="80" data-bind="textInput: srcPhon"></textarea>
+    <hr>
+    <output name="dest">
+      <pre data-bind="text:dest" style="
+    font-family: "Lucida Sans Unicode", "DejaVu Sans", monospace;
+    letter-spacing: 0.02em;
+"></pre>
+    </output>
+
+
+    <script src="ext/knockout-3.4.2.js" charset="utf-8"></script>
+    <script src="arpabet.js" charset="utf-8"></script>
+  </body>
+</html>
